@@ -19,7 +19,7 @@ const Draft: React.FC = () => {
             body: JSON.stringify(body),
             credentials: 'include',
         });
-        await Router.push('/drafts');
+        // await Router.push('/drafts');
     } catch (error) {
         console.error(error);
     }
