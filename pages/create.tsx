@@ -7,7 +7,7 @@ const Draft: React.FC = () => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const { data: session, status } = useSession();
-    console.log('session', session);
+    // console.log('session', session);
 
   const submitData = async (e: React.SyntheticEvent) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ const Draft: React.FC = () => {
             body: JSON.stringify(body),
             credentials: 'include',
         });
-        // await Router.push('/drafts');
+        await Router.push('/drafts');
     } catch (error) {
         console.error(error);
     }
