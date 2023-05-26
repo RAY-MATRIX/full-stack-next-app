@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import prisma from '../../../lib/prisma'
-import { getSession } from 'next-auth/react'
+// import { getSession } from 'next-auth/react'
 import { authOptions } from "../auth/[...nextauth]"
 import { getServerSession } from "next-auth/next"
 
